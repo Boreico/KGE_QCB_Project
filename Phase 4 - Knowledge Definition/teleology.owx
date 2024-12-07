@@ -1,0 +1,1758 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://schema.org/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://schema.org/">
+    <Prefix name="" IRI="https://schema.org/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="schema" IRI="https://schema.org/"/>
+    <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:modified"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2024-11-22</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal>Schema.org Vocabulary</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>28.1</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Dataset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Phenotype"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#SGB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Sample"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Sibling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Taxon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Transmission"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Twin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#Entity_GID-1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_SGB"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_is-a"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_is-from"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_phenotype"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_sample"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_sibling"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_source-of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_taxonomy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_transmission"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_SGB_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_SGB_household"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_SGB_intradataset"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_SGB_mother-infant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_age_category"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_age_living_apart"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_anaerobe"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_body_site"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_class"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_classification"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_family"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_family_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_father_subject_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_gender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_genus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_gram_negative"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_is_westernized"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_kingdom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_mother_subject_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_motile"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_order"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_partner_subject_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_phylum"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_relative_abundance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_sample_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_sibling_subject_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_species"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_spore_former"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_subject_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_taxonomy_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_zygosity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ActionStatusType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="BedType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="BodyMeasurementTypeEnumeration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="DriveWheelConfigurationValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="DrugCostCategory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="DrugPregnancyCategory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="DrugPrescriptionStatus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="EUEnergyEfficiencyEnumeration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="EnergyStarEnergyEfficiencyEnumeration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="EventStatusType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="False"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="GameServerStatus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="IPTCDigitalSourceEnumeration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="InfectiousAgentClass"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="LegalForceStatus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="MedicalAudienceType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="MedicalDevicePurpose"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="MedicalEvidenceLevel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="MedicalImagingTechnique"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="MedicalObservationalStudyDesign"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="MedicalProcedureType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="MedicalSpecialty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="MedicalStudyStatus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="MedicalTrialDesign"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="MedicineSystem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="NLNonprofitType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="OrderStatus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="PaymentStatusType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="PhysicalExam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ReservationStatusType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="SizeSpecification"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="SteeringPositionValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="True"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="UKNonprofitType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="USNonprofitType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="WearableMeasurementTypeEnumeration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="WearableSizeGroupEnumeration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="WearableSizeSystemEnumeration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="actionApplication"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="actionOption"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="actor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="actors"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="album"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="albums"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="application"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="area"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="areaServed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="arterialBranch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="artworkSurface"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="aspect"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="assembly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="attendee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="attendees"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="audience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="availableOnDevice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="award"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="awards"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="benefits"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="blogPost"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="blogPosts"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="bookingAgent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="branch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="branchOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="broker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="carrier"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="catalog"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="clincalPharmacology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="clinicalPharmacology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="codeSampleType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="colleague"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="colleagues"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="collection"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="contactPoint"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="contactPoints"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="containedIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="containedInPlace"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="containsSeason"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="course"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="device"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="director"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="directors"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="employee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="employees"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="encoding"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="encodingFormat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="encodings"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="episode"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="episodes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="event"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="events"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="executableLibraryName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="exerciseCourse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="fileFormat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="founder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="founders"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="hasMap"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="hasMenu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="hasMerchantReturnPolicy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="hasProductReturnPolicy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="inLanguage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="incentiveCompensation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="incentives"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="includedDataCatalog"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="includedInDataCatalog"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ingredients"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="interactionCount"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="interactionStatistic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="isBasedOn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="isBasedOnUrl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="jobBenefits"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="language"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="mainContentOfPage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="map"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="maps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="member"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="members"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="menu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="merchant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="merchantReturnLink"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="musicGroupMember"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="namedPosition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="option"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="parent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="parentOrganization"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="parents"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="partOfSeries"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="partOfTVSeries"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="performer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="performers"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="photo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="photos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="produces"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="productReturnLink"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="provider"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="recipeIngredient"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="requirements"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="review"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="reviews"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="roleName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="runtime"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="runtimePlatform"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="sampleType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="season"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="seasons"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="seller"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="serviceArea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="serviceAudience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="serviceOutput"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="sibling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="siblings"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="significantLink"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="significantLinks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="softwareRequirements"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="step"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="steps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="subEvent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="subEvents"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="surface"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="targetCollection"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="temporalCoverage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="track"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="tracks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="vendor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="warranty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="warrantyPromise"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:modified"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#isEtype"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="name"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Country"/>
+        <Class IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#Entity_GID-1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Dataset"/>
+        <Class IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#Entity_GID-1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Person"/>
+        <Class IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#Entity_GID-1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Phenotype"/>
+        <Class IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#Entity_GID-1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#SGB"/>
+        <Class IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#Entity_GID-1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Sample"/>
+        <Class IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#Entity_GID-1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Sibling"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Taxon"/>
+        <Class IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#Entity_GID-1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Transmission"/>
+        <Class IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#Entity_GID-1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Twin"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Sibling"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_SGB"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Taxon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_is-a"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Twin"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_is-from"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_phenotype"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#SGB"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_sample"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Dataset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_sibling"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_source-of"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_taxonomy"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Sample"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_transmission"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#SGB"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_SGB"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#SGB"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_is-a"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Sibling"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_is-from"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_phenotype"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Phenotype"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_sample"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Sample"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_sibling"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Sibling"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_source-of"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Sample"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_taxonomy"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Taxon"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://knowdive.disi.unitn.it/etype#has_transmission"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Transmission"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_SGB_ID"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#SGB"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_SGB_household"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Transmission"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_SGB_intradataset"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Transmission"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_SGB_mother-infant"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Transmission"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_age_category"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Sample"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_age_living_apart"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Twin"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_anaerobe"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Phenotype"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_body_site"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Sample"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_class"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Taxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_classification"/>
+        <ObjectUnionOf>
+            <Class IRI="http://knowdive.disi.unitn.it/etype#Dataset"/>
+            <Class IRI="http://knowdive.disi.unitn.it/etype#SGB"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_family"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Taxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_family_ID"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_father_subject_ID"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_gender"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_genus"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Taxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_gram_negative"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Phenotype"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_is_westernized"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_kingdom"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Taxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_mother_subject_ID"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_motile"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Phenotype"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_name"/>
+        <ObjectUnionOf>
+            <Class IRI="http://knowdive.disi.unitn.it/etype#Country"/>
+            <Class IRI="http://knowdive.disi.unitn.it/etype#Dataset"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_order"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Taxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_partner_subject_ID"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_phylum"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Taxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_relative_abundance"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Taxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_sample_ID"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Sample"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_sibling_subject_ID"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Sibling"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_species"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Taxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_spore_former"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Phenotype"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_subject_ID"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_taxonomy_ID"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Taxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_zygosity"/>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#Twin"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_SGB_ID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_SGB_household"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_SGB_intradataset"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_SGB_mother-infant"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_age_category"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_age_living_apart"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_anaerobe"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_body_site"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_class"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_classification"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_family"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_family_ID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_father_subject_ID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_gender"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_genus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_gram_negative"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_is_westernized"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_kingdom"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_mother_subject_ID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_motile"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_order"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_partner_subject_ID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_phylum"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_relative_abundance"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_sample_ID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_sibling_subject_ID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_species"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_spore_former"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_subject_ID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_taxonomy_ID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://knowdive.disi.unitn.it/etype#has_zygosity"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Country</IRI>
+        <Literal>UKC-45187</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#isEtype"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Country</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Country</IRI>
+        <Literal xml:lang="en">A country.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Country</IRI>
+        <Literal>aligned to Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Country</IRI>
+        <Literal>the territory occupied by a nation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Country</IRI>
+        <IRI>http://knowdive.disi.unitn.it/etype#Country</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Country</IRI>
+        <Literal xml:lang="en">Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Dataset</IRI>
+        <Literal>https://purl.dsmz.de/schema/Dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#isEtype"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Dataset</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Dataset</IRI>
+        <Literal xml:lang="en">A body of structured information describing some topic(s) of interest.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Dataset</IRI>
+        <Literal>A structured collection of data, often presented in tabular or other formats, that is used for analysis, research, or reference purposes. Datasets can consist of numerical, textual, or categorical information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Dataset</IRI>
+        <Literal>aligned to Dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Dataset</IRI>
+        <IRI>http://knowdive.disi.unitn.it/etype#Dataset</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Dataset</IRI>
+        <Literal xml:lang="en">Dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Person</IRI>
+        <Literal>UKC-36</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#isEtype"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Person</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Person</IRI>
+        <Literal xml:lang="en">A person (alive, dead, undead, or fictional).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Person</IRI>
+        <Literal>a human being</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Person</IRI>
+        <Literal>aligned to Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Person</IRI>
+        <IRI>http://knowdive.disi.unitn.it/etype#Person</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Person</IRI>
+        <Literal xml:lang="en">Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Phenotype</IRI>
+        <Literal>UKC-26778</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#isEtype"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Phenotype</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Phenotype</IRI>
+        <Literal>what an organism looks like as a consequence of the interaction of its genotype and the environment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#SGB</IRI>
+        <Literal>KGE24-QCB2-4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#isEtype"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#SGB</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#SGB</IRI>
+        <Literal>Species-level Genome Bins - microbial genomes from metagenomic data, representing species-level groupings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Sample</IRI>
+        <Literal>UKC-46463</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#isEtype"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Sample</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Sample</IRI>
+        <Literal>all or part of a natural object that is collected and preserved as an example of its class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Sibling</IRI>
+        <Literal>UKC-52619</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#isEtype"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Sibling</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Sibling</IRI>
+        <Literal>a person&apos;s brother or sister</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Taxon</IRI>
+        <Literal>UKC-44477</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#isEtype"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Taxon</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Taxon</IRI>
+        <Literal xml:lang="en">A set of organisms asserted to represent a natural cohesive biological unit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Taxon</IRI>
+        <Literal>a classification of organisms into groups based on similarities of structure or origin etc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Taxon</IRI>
+        <Literal>aligned to Taxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Taxon</IRI>
+        <IRI>https://pending.schema.org/Taxon</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Taxon</IRI>
+        <Literal xml:lang="en">Taxonomy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Transmission</IRI>
+        <Literal>KGE24-QCB2-5</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#isEtype"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Transmission</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Transmission</IRI>
+        <Literal>the transfer of microorganisms (bacteria, viruses, fungi, etc.) between individuals, environments, or species, influencing their microbiome composition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Twin</IRI>
+        <Literal>UKC-53445</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#isEtype"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Twin</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#Twin</IRI>
+        <Literal>either of two offspring born at the same time from the same pregnancy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_SGB</IRI>
+        <Literal>KGE24-QCB2-13</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_SGB</IRI>
+        <Literal>have or possess a SGB</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_SGB_ID</IRI>
+        <Literal>KGE24-QCB2-4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_SGB_ID</IRI>
+        <Literal>Species-level Genome Bins - microbial genomes from metagenomic data, representing species-level groupings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_SGB_household</IRI>
+        <Literal>KGE24-QCB2-7</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_SGB_household</IRI>
+        <Literal>the microbial transmission within people living in the same dwelling (i.e. transmissibility)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_SGB_intradataset</IRI>
+        <Literal>KGE24-QCB2-8</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_SGB_intradataset</IRI>
+        <Literal>the microbial transmission within metagenomics samples of same dataset (i.e. transmissibility)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_SGB_mother-infant</IRI>
+        <Literal>KGE24-QCB2-6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_SGB_mother-infant</IRI>
+        <Literal>the microbial transmission between mother and her infant (i.e. transmissibility)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_age_category</IRI>
+        <Literal>UKC-26728</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_age_category</IRI>
+        <Literal>how long something has existed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_age_living_apart</IRI>
+        <Literal>KGE24-QCB2-3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_age_living_apart</IRI>
+        <Literal>the age twins started to live apart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_anaerobe</IRI>
+        <Literal>UKC-6534</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_anaerobe</IRI>
+        <Literal>an organism (especially a bacterium) that does not require air or free oxygen to live</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_body_site</IRI>
+        <Literal>KGE24-QCB2-1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_body_site</IRI>
+        <Literal>extraction point of a sample from a person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_class</IRI>
+        <Literal>UKC-43160</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_class</IRI>
+        <Literal>(biology) a taxonomic group containing one or more orders</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_classification</IRI>
+        <Literal>UKC-42540</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_classification</IRI>
+        <Literal>a group of people or things arranged by class or category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_family</IRI>
+        <Literal>UKC-43166</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_family</IRI>
+        <Literal>(biology) a taxonomic group containing one or more genera</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_family_ID</IRI>
+        <Literal>UKC-43042</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_family_ID</IRI>
+        <Literal>a social unit living together</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_father_subject_ID</IRI>
+        <Literal>UKC-43042</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_father_subject_ID</IRI>
+        <Literal>a male parent (also used as a term of address to your father)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_gender</IRI>
+        <Literal>UKC-27174</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_gender</IRI>
+        <Literal>the properties that distinguish organisms on the basis of their reproductive roles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_genus</IRI>
+        <Literal>UKC-43171</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_genus</IRI>
+        <Literal>(biology) taxonomic group containing one or more species</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_gram_negative</IRI>
+        <Literal>https://purl.dsmz.de/schema/GramNegativeBacteria</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_gram_negative</IRI>
+        <Literal>Bacteria that do not retain the crystal violet stain used in Gram staining. Gram-negative bacteria have an outer membrane and are often resistant to certain antibiotics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_is-a</IRI>
+        <Literal>aligned to equal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_is-a</IRI>
+        <Literal>to be</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_is-from</IRI>
+        <Literal>KGE24-QCB2-9</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_is-from</IRI>
+        <Literal>aligned to fromLocation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_is-from</IRI>
+        <Literal>a person having origin, association, or ownership related to a source, place, or entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_is_westernized</IRI>
+        <Literal>KGE24-QCB2-2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_is_westernized</IRI>
+        <Literal>a population that has adopted Western cultural norms, values, and lifestyles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_kingdom</IRI>
+        <Literal>UKC-42545</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_kingdom</IRI>
+        <Literal>the highest taxonomic group into which organisms are grouped; one of five biological categories: Monera or Protoctista or Plantae or Fungi or Animalia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_mother_subject_ID</IRI>
+        <Literal>UKC-51131</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_mother_subject_ID</IRI>
+        <Literal>a woman who has given birth to a child (also used as a term of address to your mother)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_motile</IRI>
+        <Literal>UKC-82548</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_motile</IRI>
+        <Literal>(of spores or microorganisms) capable of movement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_name</IRI>
+        <Literal>UKC-2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_name</IRI>
+        <Literal>a language unit by which a person or thing is known</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_order</IRI>
+        <Literal>UKC-43163</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_order</IRI>
+        <Literal>(biology) taxonomic group containing one or more families</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_partner_subject_ID</IRI>
+        <Literal>UKC-52872</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_partner_subject_ID</IRI>
+        <Literal>a person&apos;s partner in marriage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_phenotype</IRI>
+        <Literal>KGE24-QCB2-11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_phenotype</IRI>
+        <Literal>have or possess a phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_phylum</IRI>
+        <Literal>UKC-43156</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_phylum</IRI>
+        <Literal>(biology) the major taxonomic group of animals and plants; contains classes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_relative_abundance</IRI>
+        <Literal>http://purl.obolibrary.org/obo/OHMI_0000468</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_relative_abundance</IRI>
+        <Literal>A quality of ecological community that refers to how common or rare a species is relative to other species in a defined location or community</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_sample</IRI>
+        <Literal>KGE24-QCB2-12</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_sample</IRI>
+        <Literal>a dataset having or possessing one or more samples</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_sample_ID</IRI>
+        <Literal>UKC-46463</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_sample_ID</IRI>
+        <Literal>all or part of a natural object that is collected and preserved as an example of its class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_sibling</IRI>
+        <Literal>KGE24-QCB2-14</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_sibling</IRI>
+        <Literal>aligned to sibling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_sibling</IRI>
+        <Literal>a person having one or more siblings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_sibling_subject_ID</IRI>
+        <Literal>UKC-52619</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_sibling_subject_ID</IRI>
+        <Literal>a person&apos;s brother or sister</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_source-of</IRI>
+        <Literal>KGE24-QCB2-10</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_source-of</IRI>
+        <Literal>a person being the origin of one or more samples</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_species</IRI>
+        <Literal>UKC-43176</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_species</IRI>
+        <Literal>(biology) taxonomic group whose members can interbreed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_spore_former</IRI>
+        <Literal>https://purl.dsmz.de/schema/SporeFormation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_spore_former</IRI>
+        <Literal>The ability of certain microorganisms to form spores, a resistant structure that allows survival in adverse conditions. Spore formation is a significant trait for microbial classification and survival strategies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_subject_ID</IRI>
+        <Literal>UKC-36</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_subject_ID</IRI>
+        <Literal>a human being</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_taxonomy</IRI>
+        <Literal>KGE24-QCB2-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_taxonomy</IRI>
+        <Literal>have or possess a taxonomy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_taxonomy_ID</IRI>
+        <Literal>UKC-44477</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_taxonomy_ID</IRI>
+        <Literal>a classification of organisms into groups based on similarities of structure or origin etc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_transmission</IRI>
+        <Literal>KGE24-QCB2-16</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_transmission</IRI>
+        <Literal>have or possess a transmission type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_zygosity</IRI>
+        <Literal>http://purl.obolibrary.org/obo/GENO_0000133</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#has_zygosity</IRI>
+        <Literal>An allelic state that describes the degree of similarity between features in a &apos;single locus complement&apos;, within the genome of a cell or organism (i.e., whether the alleles or haplotypes that reside at the same location on paired chromosomes are the same or different)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>False</IRI>
+        <Literal xml:lang="en">The boolean value false.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>False</IRI>
+        <IRI>False</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>False</IRI>
+        <Literal xml:lang="en">False</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>True</IRI>
+        <Literal xml:lang="en">The boolean value true.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>True</IRI>
+        <IRI>True</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>True</IRI>
+        <Literal xml:lang="en">True</Literal>
+    </AnnotationAssertion>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="name"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+    </SubAnnotationPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
