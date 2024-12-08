@@ -1,0 +1,1717 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://schema.org/"
+     xml:base="https://schema.org/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:schema="https://schema.org/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:untitled-ontology-5="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#">
+    <owl:Ontology>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-11-22</dcterms:modified>
+        <rdfs:label>KGE24-QCB2 project Teleology</rdfs:label>
+        <owl:versionInfo>28.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#ConceptID"/>
+    
+
+
+    <!-- http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#isEtype -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#isEtype"/>
+    
+
+
+    <!-- https://schema.org/name -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_SGB -->
+
+    <owl:ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_SGB">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Taxon"/>
+        <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#SGB"/>
+        <untitled-ontology-5:ConceptID>KGE24-QCB2-13</untitled-ontology-5:ConceptID>
+        <rdfs:comment>have or possess a SGB</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_is-a -->
+
+    <owl:ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_is-a">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Twin"/>
+        <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Sibling"/>
+        <rdfs:comment>aligned to equal</rdfs:comment>
+        <rdfs:comment>to be</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_is-from -->
+
+    <owl:ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_is-from">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Person"/>
+        <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Country"/>
+        <untitled-ontology-5:ConceptID>KGE24-QCB2-9</untitled-ontology-5:ConceptID>
+        <rdfs:comment>a person having origin, association, or ownership related to a source, place, or entity</rdfs:comment>
+        <rdfs:comment>aligned to fromLocation</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_phenotype -->
+
+    <owl:ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_phenotype">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#SGB"/>
+        <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Phenotype"/>
+        <untitled-ontology-5:ConceptID>KGE24-QCB2-11</untitled-ontology-5:ConceptID>
+        <rdfs:comment>have or possess a phenotype</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_sample -->
+
+    <owl:ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_sample">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Dataset"/>
+        <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Sample"/>
+        <untitled-ontology-5:ConceptID>KGE24-QCB2-12</untitled-ontology-5:ConceptID>
+        <rdfs:comment>a dataset having or possessing one or more samples</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_sibling -->
+
+    <owl:ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_sibling">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Person"/>
+        <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Sibling"/>
+        <untitled-ontology-5:ConceptID>KGE24-QCB2-14</untitled-ontology-5:ConceptID>
+        <rdfs:comment>a person having one or more siblings</rdfs:comment>
+        <rdfs:comment>aligned to sibling</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_source-of -->
+
+    <owl:ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_source-of">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Person"/>
+        <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Sample"/>
+        <untitled-ontology-5:ConceptID>KGE24-QCB2-10</untitled-ontology-5:ConceptID>
+        <rdfs:comment>a person being the origin of one or more samples</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_taxonomy -->
+
+    <owl:ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_taxonomy">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Sample"/>
+        <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Taxon"/>
+        <untitled-ontology-5:ConceptID>KGE24-QCB2-15</untitled-ontology-5:ConceptID>
+        <rdfs:comment>have or possess a taxonomy</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_transmission -->
+
+    <owl:ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_transmission">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#SGB"/>
+        <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Transmission"/>
+        <untitled-ontology-5:ConceptID>KGE24-QCB2-16</untitled-ontology-5:ConceptID>
+        <rdfs:comment>have or possess a transmission type</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_SGB_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_SGB_ID">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#SGB"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <untitled-ontology-5:ConceptID>KGE24-QCB2-4</untitled-ontology-5:ConceptID>
+        <rdfs:comment>Species-level Genome Bins - microbial genomes from metagenomic data, representing species-level groupings</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_SGB_household -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_SGB_household">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Transmission"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <untitled-ontology-5:ConceptID>KGE24-QCB2-7</untitled-ontology-5:ConceptID>
+        <rdfs:comment>the microbial transmission within people living in the same dwelling (i.e. transmissibility)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_SGB_intradataset -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_SGB_intradataset">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Transmission"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <untitled-ontology-5:ConceptID>KGE24-QCB2-8</untitled-ontology-5:ConceptID>
+        <rdfs:comment>the microbial transmission within metagenomics samples of same dataset (i.e. transmissibility)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_SGB_mother-infant -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_SGB_mother-infant">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Transmission"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <untitled-ontology-5:ConceptID>KGE24-QCB2-6</untitled-ontology-5:ConceptID>
+        <rdfs:comment>the microbial transmission between mother and her infant (i.e. transmissibility)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_age_category -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_age_category">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Sample"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <untitled-ontology-5:ConceptID>UKC-26728</untitled-ontology-5:ConceptID>
+        <rdfs:comment>how long something has existed</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_age_living_apart -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_age_living_apart">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Twin"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <untitled-ontology-5:ConceptID>KGE24-QCB2-3</untitled-ontology-5:ConceptID>
+        <rdfs:comment>the age twins started to live apart</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_anaerobe -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_anaerobe">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Phenotype"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <untitled-ontology-5:ConceptID>UKC-6534</untitled-ontology-5:ConceptID>
+        <rdfs:comment>an organism (especially a bacterium) that does not require air or free oxygen to live</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_body_site -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_body_site">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Sample"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <untitled-ontology-5:ConceptID>KGE24-QCB2-1</untitled-ontology-5:ConceptID>
+        <rdfs:comment>extraction point of a sample from a person</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_class -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_class">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Taxon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <untitled-ontology-5:ConceptID>UKC-43160</untitled-ontology-5:ConceptID>
+        <rdfs:comment>(biology) a taxonomic group containing one or more orders</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_classification -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_classification">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://knowdive.disi.unitn.it/etype#Dataset"/>
+                    <rdf:Description rdf:about="http://knowdive.disi.unitn.it/etype#SGB"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <untitled-ontology-5:ConceptID>UKC-42540</untitled-ontology-5:ConceptID>
+        <rdfs:comment>a group of people or things arranged by class or category</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_family -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_family">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Taxon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <untitled-ontology-5:ConceptID>UKC-43166</untitled-ontology-5:ConceptID>
+        <rdfs:comment>(biology) a taxonomic group containing one or more genera</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_family_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_family_ID">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <untitled-ontology-5:ConceptID>UKC-43042</untitled-ontology-5:ConceptID>
+        <rdfs:comment>a social unit living together</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_father_subject_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_father_subject_ID">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <untitled-ontology-5:ConceptID>UKC-43042</untitled-ontology-5:ConceptID>
+        <rdfs:comment>a male parent (also used as a term of address to your father)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_gender -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_gender">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <untitled-ontology-5:ConceptID>UKC-27174</untitled-ontology-5:ConceptID>
+        <rdfs:comment>the properties that distinguish organisms on the basis of their reproductive roles</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_genus -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_genus">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Taxon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <untitled-ontology-5:ConceptID>UKC-43171</untitled-ontology-5:ConceptID>
+        <rdfs:comment>(biology) taxonomic group containing one or more species</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_gram_negative -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_gram_negative">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Phenotype"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <untitled-ontology-5:ConceptID>https://purl.dsmz.de/schema/GramNegativeBacteria</untitled-ontology-5:ConceptID>
+        <rdfs:comment>Bacteria that do not retain the crystal violet stain used in Gram staining. Gram-negative bacteria have an outer membrane and are often resistant to certain antibiotics</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_is_westernized -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_is_westernized">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <untitled-ontology-5:ConceptID>KGE24-QCB2-2</untitled-ontology-5:ConceptID>
+        <rdfs:comment>a population that has adopted Western cultural norms, values, and lifestyles</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_kingdom -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_kingdom">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Taxon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <untitled-ontology-5:ConceptID>UKC-42545</untitled-ontology-5:ConceptID>
+        <rdfs:comment>the highest taxonomic group into which organisms are grouped; one of five biological categories: Monera or Protoctista or Plantae or Fungi or Animalia</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_mother_subject_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_mother_subject_ID">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <untitled-ontology-5:ConceptID>UKC-51131</untitled-ontology-5:ConceptID>
+        <rdfs:comment>a woman who has given birth to a child (also used as a term of address to your mother)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_motile -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_motile">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Phenotype"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <untitled-ontology-5:ConceptID>UKC-82548</untitled-ontology-5:ConceptID>
+        <rdfs:comment>(of spores or microorganisms) capable of movement</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_name -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_name">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://knowdive.disi.unitn.it/etype#Country"/>
+                    <rdf:Description rdf:about="http://knowdive.disi.unitn.it/etype#Dataset"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <untitled-ontology-5:ConceptID>UKC-2</untitled-ontology-5:ConceptID>
+        <rdfs:comment>a language unit by which a person or thing is known</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_order -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_order">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Taxon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <untitled-ontology-5:ConceptID>UKC-43163</untitled-ontology-5:ConceptID>
+        <rdfs:comment>(biology) taxonomic group containing one or more families</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_partner_subject_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_partner_subject_ID">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <untitled-ontology-5:ConceptID>UKC-52872</untitled-ontology-5:ConceptID>
+        <rdfs:comment>a person&apos;s partner in marriage</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_phylum -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_phylum">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Taxon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <untitled-ontology-5:ConceptID>UKC-43156</untitled-ontology-5:ConceptID>
+        <rdfs:comment>(biology) the major taxonomic group of animals and plants; contains classes</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_relative_abundance -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_relative_abundance">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Taxon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <untitled-ontology-5:ConceptID>http://purl.obolibrary.org/obo/OHMI_0000468</untitled-ontology-5:ConceptID>
+        <rdfs:comment>A quality of ecological community that refers to how common or rare a species is relative to other species in a defined location or community</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_sample_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_sample_ID">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Sample"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <untitled-ontology-5:ConceptID>UKC-46463</untitled-ontology-5:ConceptID>
+        <rdfs:comment>all or part of a natural object that is collected and preserved as an example of its class</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_sibling_subject_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_sibling_subject_ID">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Sibling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <untitled-ontology-5:ConceptID>UKC-52619</untitled-ontology-5:ConceptID>
+        <rdfs:comment>a person&apos;s brother or sister</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_species -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_species">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Taxon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <untitled-ontology-5:ConceptID>UKC-43176</untitled-ontology-5:ConceptID>
+        <rdfs:comment>(biology) taxonomic group whose members can interbreed</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_spore_former -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_spore_former">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Phenotype"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <untitled-ontology-5:ConceptID>https://purl.dsmz.de/schema/SporeFormation</untitled-ontology-5:ConceptID>
+        <rdfs:comment>The ability of certain microorganisms to form spores, a resistant structure that allows survival in adverse conditions. Spore formation is a significant trait for microbial classification and survival strategies</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_subject_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_subject_ID">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <untitled-ontology-5:ConceptID>UKC-36</untitled-ontology-5:ConceptID>
+        <rdfs:comment>a human being</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_taxonomy_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_taxonomy_ID">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Taxon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <untitled-ontology-5:ConceptID>UKC-44477</untitled-ontology-5:ConceptID>
+        <rdfs:comment>a classification of organisms into groups based on similarities of structure or origin etc</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#has_zygosity -->
+
+    <owl:DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_zygosity">
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Twin"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <untitled-ontology-5:ConceptID>http://purl.obolibrary.org/obo/GENO_0000133</untitled-ontology-5:ConceptID>
+        <rdfs:comment>An allelic state that describes the degree of similarity between features in a &apos;single locus complement&apos;, within the genome of a cell or organism (i.e., whether the alleles or haplotypes that reside at the same location on paired chromosomes are the same or different)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#Country -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#Entity_GID-1"/>
+        <untitled-ontology-5:ConceptID>UKC-45187</untitled-ontology-5:ConceptID>
+        <untitled-ontology-5:isEtype rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-5:isEtype>
+        <rdfs:comment xml:lang="en">A country.</rdfs:comment>
+        <rdfs:comment>aligned to Country</rdfs:comment>
+        <rdfs:comment>the territory occupied by a nation</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://knowdive.disi.unitn.it/etype#Country"/>
+        <rdfs:label xml:lang="en">Country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#Dataset -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#Dataset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#Entity_GID-1"/>
+        <untitled-ontology-5:ConceptID>https://purl.dsmz.de/schema/Dataset</untitled-ontology-5:ConceptID>
+        <untitled-ontology-5:isEtype rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-5:isEtype>
+        <rdfs:comment xml:lang="en">A body of structured information describing some topic(s) of interest.</rdfs:comment>
+        <rdfs:comment>A structured collection of data, often presented in tabular or other formats, that is used for analysis, research, or reference purposes. Datasets can consist of numerical, textual, or categorical information</rdfs:comment>
+        <rdfs:comment>aligned to Dataset</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://knowdive.disi.unitn.it/etype#Dataset"/>
+        <rdfs:label xml:lang="en">Dataset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#Person -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#Entity_GID-1"/>
+        <untitled-ontology-5:ConceptID>UKC-36</untitled-ontology-5:ConceptID>
+        <untitled-ontology-5:isEtype rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-5:isEtype>
+        <rdfs:comment xml:lang="en">A person (alive, dead, undead, or fictional).</rdfs:comment>
+        <rdfs:comment>a human being</rdfs:comment>
+        <rdfs:comment>aligned to Person</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://knowdive.disi.unitn.it/etype#Person"/>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#Phenotype -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#Phenotype">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#Entity_GID-1"/>
+        <untitled-ontology-5:ConceptID>UKC-26778</untitled-ontology-5:ConceptID>
+        <untitled-ontology-5:isEtype rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-5:isEtype>
+        <rdfs:comment>what an organism looks like as a consequence of the interaction of its genotype and the environment</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#SGB -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#SGB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#Entity_GID-1"/>
+        <untitled-ontology-5:ConceptID>KGE24-QCB2-4</untitled-ontology-5:ConceptID>
+        <untitled-ontology-5:isEtype rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-5:isEtype>
+        <rdfs:comment>Species-level Genome Bins - microbial genomes from metagenomic data, representing species-level groupings</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#Sample -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#Sample">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#Entity_GID-1"/>
+        <untitled-ontology-5:ConceptID>UKC-46463</untitled-ontology-5:ConceptID>
+        <untitled-ontology-5:isEtype rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-5:isEtype>
+        <rdfs:comment>all or part of a natural object that is collected and preserved as an example of its class</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#Sibling -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#Sibling">
+        <rdfs:subClassOf rdf:resource="http://knowdive.disi.unitn.it/etype#Person"/>
+        <untitled-ontology-5:ConceptID>UKC-52619</untitled-ontology-5:ConceptID>
+        <untitled-ontology-5:isEtype rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-5:isEtype>
+        <rdfs:comment>a person&apos;s brother or sister</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#Taxon -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#Taxon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#Entity_GID-1"/>
+        <untitled-ontology-5:ConceptID>UKC-44477</untitled-ontology-5:ConceptID>
+        <untitled-ontology-5:isEtype rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-5:isEtype>
+        <rdfs:comment xml:lang="en">A set of organisms asserted to represent a natural cohesive biological unit.</rdfs:comment>
+        <rdfs:comment>a classification of organisms into groups based on similarities of structure or origin etc</rdfs:comment>
+        <rdfs:comment>aligned to Taxon</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://pending.schema.org/Taxon"/>
+        <rdfs:label xml:lang="en">Taxonomy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#Transmission -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#Transmission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#Entity_GID-1"/>
+        <untitled-ontology-5:ConceptID>KGE24-QCB2-5</untitled-ontology-5:ConceptID>
+        <untitled-ontology-5:isEtype rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-5:isEtype>
+        <rdfs:comment>the transfer of microorganisms (bacteria, viruses, fungi, etc.) between individuals, environments, or species, influencing their microbiome composition</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://knowdive.disi.unitn.it/etype#Twin -->
+
+    <owl:Class rdf:about="http://knowdive.disi.unitn.it/etype#Twin">
+        <rdfs:subClassOf rdf:resource="http://knowdive.disi.unitn.it/etype#Sibling"/>
+        <untitled-ontology-5:ConceptID>UKC-53445</untitled-ontology-5:ConceptID>
+        <untitled-ontology-5:isEtype rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-5:isEtype>
+        <rdfs:comment>either of two offspring born at the same time from the same pregnancy</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#Entity_GID-1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/roans/ontologies/2024/10/untitled-ontology-5#Entity_GID-1"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://schema.org/ActionStatusType -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/ActionStatusType"/>
+    
+
+
+    <!-- https://schema.org/BedType -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/BedType"/>
+    
+
+
+    <!-- https://schema.org/BodyMeasurementTypeEnumeration -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/BodyMeasurementTypeEnumeration"/>
+    
+
+
+    <!-- https://schema.org/DriveWheelConfigurationValue -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/DriveWheelConfigurationValue"/>
+    
+
+
+    <!-- https://schema.org/DrugCostCategory -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/DrugCostCategory"/>
+    
+
+
+    <!-- https://schema.org/DrugPregnancyCategory -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/DrugPregnancyCategory"/>
+    
+
+
+    <!-- https://schema.org/DrugPrescriptionStatus -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/DrugPrescriptionStatus"/>
+    
+
+
+    <!-- https://schema.org/EUEnergyEfficiencyEnumeration -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/EUEnergyEfficiencyEnumeration"/>
+    
+
+
+    <!-- https://schema.org/EnergyStarEnergyEfficiencyEnumeration -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/EnergyStarEnergyEfficiencyEnumeration"/>
+    
+
+
+    <!-- https://schema.org/EventStatusType -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/EventStatusType"/>
+    
+
+
+    <!-- https://schema.org/False -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/False">
+        <rdfs:comment xml:lang="en">The boolean value false.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/False"/>
+        <rdfs:label xml:lang="en">False</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/GameServerStatus -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/GameServerStatus"/>
+    
+
+
+    <!-- https://schema.org/IPTCDigitalSourceEnumeration -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/IPTCDigitalSourceEnumeration"/>
+    
+
+
+    <!-- https://schema.org/InfectiousAgentClass -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/InfectiousAgentClass"/>
+    
+
+
+    <!-- https://schema.org/LegalForceStatus -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/LegalForceStatus"/>
+    
+
+
+    <!-- https://schema.org/MedicalAudienceType -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/MedicalAudienceType"/>
+    
+
+
+    <!-- https://schema.org/MedicalDevicePurpose -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/MedicalDevicePurpose"/>
+    
+
+
+    <!-- https://schema.org/MedicalEvidenceLevel -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/MedicalEvidenceLevel"/>
+    
+
+
+    <!-- https://schema.org/MedicalImagingTechnique -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/MedicalImagingTechnique"/>
+    
+
+
+    <!-- https://schema.org/MedicalObservationalStudyDesign -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/MedicalObservationalStudyDesign"/>
+    
+
+
+    <!-- https://schema.org/MedicalProcedureType -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/MedicalProcedureType"/>
+    
+
+
+    <!-- https://schema.org/MedicalSpecialty -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/MedicalSpecialty"/>
+    
+
+
+    <!-- https://schema.org/MedicalStudyStatus -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/MedicalStudyStatus"/>
+    
+
+
+    <!-- https://schema.org/MedicalTrialDesign -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/MedicalTrialDesign"/>
+    
+
+
+    <!-- https://schema.org/MedicineSystem -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/MedicineSystem"/>
+    
+
+
+    <!-- https://schema.org/NLNonprofitType -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/NLNonprofitType"/>
+    
+
+
+    <!-- https://schema.org/OrderStatus -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/OrderStatus"/>
+    
+
+
+    <!-- https://schema.org/PaymentStatusType -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/PaymentStatusType"/>
+    
+
+
+    <!-- https://schema.org/PhysicalExam -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/PhysicalExam"/>
+    
+
+
+    <!-- https://schema.org/ReservationStatusType -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/ReservationStatusType"/>
+    
+
+
+    <!-- https://schema.org/SizeSpecification -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/SizeSpecification"/>
+    
+
+
+    <!-- https://schema.org/SteeringPositionValue -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/SteeringPositionValue"/>
+    
+
+
+    <!-- https://schema.org/True -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/True">
+        <rdfs:comment xml:lang="en">The boolean value true.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://schema.org/True"/>
+        <rdfs:label xml:lang="en">True</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/UKNonprofitType -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/UKNonprofitType"/>
+    
+
+
+    <!-- https://schema.org/USNonprofitType -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/USNonprofitType"/>
+    
+
+
+    <!-- https://schema.org/WearableMeasurementTypeEnumeration -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/WearableMeasurementTypeEnumeration"/>
+    
+
+
+    <!-- https://schema.org/WearableSizeGroupEnumeration -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/WearableSizeGroupEnumeration"/>
+    
+
+
+    <!-- https://schema.org/WearableSizeSystemEnumeration -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/WearableSizeSystemEnumeration"/>
+    
+
+
+    <!-- https://schema.org/actionApplication -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/actionApplication"/>
+    
+
+
+    <!-- https://schema.org/actionOption -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/actionOption"/>
+    
+
+
+    <!-- https://schema.org/actor -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/actor"/>
+    
+
+
+    <!-- https://schema.org/actors -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/actors"/>
+    
+
+
+    <!-- https://schema.org/album -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/album"/>
+    
+
+
+    <!-- https://schema.org/albums -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/albums"/>
+    
+
+
+    <!-- https://schema.org/application -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/application"/>
+    
+
+
+    <!-- https://schema.org/area -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/area"/>
+    
+
+
+    <!-- https://schema.org/areaServed -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/areaServed"/>
+    
+
+
+    <!-- https://schema.org/arterialBranch -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/arterialBranch"/>
+    
+
+
+    <!-- https://schema.org/artworkSurface -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/artworkSurface"/>
+    
+
+
+    <!-- https://schema.org/aspect -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/aspect"/>
+    
+
+
+    <!-- https://schema.org/assembly -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/assembly"/>
+    
+
+
+    <!-- https://schema.org/attendee -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/attendee"/>
+    
+
+
+    <!-- https://schema.org/attendees -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/attendees"/>
+    
+
+
+    <!-- https://schema.org/audience -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/audience"/>
+    
+
+
+    <!-- https://schema.org/availableOnDevice -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/availableOnDevice"/>
+    
+
+
+    <!-- https://schema.org/award -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/award"/>
+    
+
+
+    <!-- https://schema.org/awards -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/awards"/>
+    
+
+
+    <!-- https://schema.org/benefits -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/benefits"/>
+    
+
+
+    <!-- https://schema.org/blogPost -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/blogPost"/>
+    
+
+
+    <!-- https://schema.org/blogPosts -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/blogPosts"/>
+    
+
+
+    <!-- https://schema.org/bookingAgent -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/bookingAgent"/>
+    
+
+
+    <!-- https://schema.org/branch -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/branch"/>
+    
+
+
+    <!-- https://schema.org/branchOf -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/branchOf"/>
+    
+
+
+    <!-- https://schema.org/broker -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/broker"/>
+    
+
+
+    <!-- https://schema.org/carrier -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/carrier"/>
+    
+
+
+    <!-- https://schema.org/catalog -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/catalog"/>
+    
+
+
+    <!-- https://schema.org/clincalPharmacology -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/clincalPharmacology"/>
+    
+
+
+    <!-- https://schema.org/clinicalPharmacology -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/clinicalPharmacology"/>
+    
+
+
+    <!-- https://schema.org/codeSampleType -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/codeSampleType"/>
+    
+
+
+    <!-- https://schema.org/colleague -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/colleague"/>
+    
+
+
+    <!-- https://schema.org/colleagues -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/colleagues"/>
+    
+
+
+    <!-- https://schema.org/collection -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/collection"/>
+    
+
+
+    <!-- https://schema.org/contactPoint -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/contactPoint"/>
+    
+
+
+    <!-- https://schema.org/contactPoints -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/contactPoints"/>
+    
+
+
+    <!-- https://schema.org/containedIn -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/containedIn"/>
+    
+
+
+    <!-- https://schema.org/containedInPlace -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/containedInPlace"/>
+    
+
+
+    <!-- https://schema.org/containsSeason -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/containsSeason"/>
+    
+
+
+    <!-- https://schema.org/course -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/course"/>
+    
+
+
+    <!-- https://schema.org/device -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/device"/>
+    
+
+
+    <!-- https://schema.org/director -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/director"/>
+    
+
+
+    <!-- https://schema.org/directors -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/directors"/>
+    
+
+
+    <!-- https://schema.org/employee -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/employee"/>
+    
+
+
+    <!-- https://schema.org/employees -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/employees"/>
+    
+
+
+    <!-- https://schema.org/encoding -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/encoding"/>
+    
+
+
+    <!-- https://schema.org/encodingFormat -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/encodingFormat"/>
+    
+
+
+    <!-- https://schema.org/encodings -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/encodings"/>
+    
+
+
+    <!-- https://schema.org/episode -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/episode"/>
+    
+
+
+    <!-- https://schema.org/episodes -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/episodes"/>
+    
+
+
+    <!-- https://schema.org/event -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/event"/>
+    
+
+
+    <!-- https://schema.org/events -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/events"/>
+    
+
+
+    <!-- https://schema.org/executableLibraryName -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/executableLibraryName"/>
+    
+
+
+    <!-- https://schema.org/exerciseCourse -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/exerciseCourse"/>
+    
+
+
+    <!-- https://schema.org/fileFormat -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/fileFormat"/>
+    
+
+
+    <!-- https://schema.org/founder -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/founder"/>
+    
+
+
+    <!-- https://schema.org/founders -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/founders"/>
+    
+
+
+    <!-- https://schema.org/hasMap -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/hasMap"/>
+    
+
+
+    <!-- https://schema.org/hasMenu -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/hasMenu"/>
+    
+
+
+    <!-- https://schema.org/hasMerchantReturnPolicy -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/hasMerchantReturnPolicy"/>
+    
+
+
+    <!-- https://schema.org/hasProductReturnPolicy -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/hasProductReturnPolicy"/>
+    
+
+
+    <!-- https://schema.org/inLanguage -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/inLanguage"/>
+    
+
+
+    <!-- https://schema.org/incentiveCompensation -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/incentiveCompensation"/>
+    
+
+
+    <!-- https://schema.org/incentives -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/incentives"/>
+    
+
+
+    <!-- https://schema.org/includedDataCatalog -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/includedDataCatalog"/>
+    
+
+
+    <!-- https://schema.org/includedInDataCatalog -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/includedInDataCatalog"/>
+    
+
+
+    <!-- https://schema.org/ingredients -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/ingredients"/>
+    
+
+
+    <!-- https://schema.org/interactionCount -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/interactionCount"/>
+    
+
+
+    <!-- https://schema.org/interactionStatistic -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/interactionStatistic"/>
+    
+
+
+    <!-- https://schema.org/isBasedOn -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/isBasedOn"/>
+    
+
+
+    <!-- https://schema.org/isBasedOnUrl -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/isBasedOnUrl"/>
+    
+
+
+    <!-- https://schema.org/jobBenefits -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/jobBenefits"/>
+    
+
+
+    <!-- https://schema.org/language -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/language"/>
+    
+
+
+    <!-- https://schema.org/mainContentOfPage -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/mainContentOfPage"/>
+    
+
+
+    <!-- https://schema.org/map -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/map"/>
+    
+
+
+    <!-- https://schema.org/maps -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/maps"/>
+    
+
+
+    <!-- https://schema.org/member -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/member"/>
+    
+
+
+    <!-- https://schema.org/members -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/members"/>
+    
+
+
+    <!-- https://schema.org/menu -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/menu"/>
+    
+
+
+    <!-- https://schema.org/merchant -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/merchant"/>
+    
+
+
+    <!-- https://schema.org/merchantReturnLink -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/merchantReturnLink"/>
+    
+
+
+    <!-- https://schema.org/musicGroupMember -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/musicGroupMember"/>
+    
+
+
+    <!-- https://schema.org/namedPosition -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/namedPosition"/>
+    
+
+
+    <!-- https://schema.org/option -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/option"/>
+    
+
+
+    <!-- https://schema.org/parent -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/parent"/>
+    
+
+
+    <!-- https://schema.org/parentOrganization -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/parentOrganization"/>
+    
+
+
+    <!-- https://schema.org/parents -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/parents"/>
+    
+
+
+    <!-- https://schema.org/partOfSeries -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/partOfSeries"/>
+    
+
+
+    <!-- https://schema.org/partOfTVSeries -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/partOfTVSeries"/>
+    
+
+
+    <!-- https://schema.org/performer -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/performer"/>
+    
+
+
+    <!-- https://schema.org/performers -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/performers"/>
+    
+
+
+    <!-- https://schema.org/photo -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/photo"/>
+    
+
+
+    <!-- https://schema.org/photos -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/photos"/>
+    
+
+
+    <!-- https://schema.org/produces -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/produces"/>
+    
+
+
+    <!-- https://schema.org/productReturnLink -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/productReturnLink"/>
+    
+
+
+    <!-- https://schema.org/provider -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/provider"/>
+    
+
+
+    <!-- https://schema.org/recipeIngredient -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/recipeIngredient"/>
+    
+
+
+    <!-- https://schema.org/requirements -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/requirements"/>
+    
+
+
+    <!-- https://schema.org/review -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/review"/>
+    
+
+
+    <!-- https://schema.org/reviews -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/reviews"/>
+    
+
+
+    <!-- https://schema.org/roleName -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/roleName"/>
+    
+
+
+    <!-- https://schema.org/runtime -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/runtime"/>
+    
+
+
+    <!-- https://schema.org/runtimePlatform -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/runtimePlatform"/>
+    
+
+
+    <!-- https://schema.org/sampleType -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/sampleType"/>
+    
+
+
+    <!-- https://schema.org/season -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/season"/>
+    
+
+
+    <!-- https://schema.org/seasons -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/seasons"/>
+    
+
+
+    <!-- https://schema.org/seller -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/seller"/>
+    
+
+
+    <!-- https://schema.org/serviceArea -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/serviceArea"/>
+    
+
+
+    <!-- https://schema.org/serviceAudience -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/serviceAudience"/>
+    
+
+
+    <!-- https://schema.org/serviceOutput -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/serviceOutput"/>
+    
+
+
+    <!-- https://schema.org/sibling -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/sibling"/>
+    
+
+
+    <!-- https://schema.org/siblings -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/siblings"/>
+    
+
+
+    <!-- https://schema.org/significantLink -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/significantLink"/>
+    
+
+
+    <!-- https://schema.org/significantLinks -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/significantLinks"/>
+    
+
+
+    <!-- https://schema.org/softwareRequirements -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/softwareRequirements"/>
+    
+
+
+    <!-- https://schema.org/step -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/step"/>
+    
+
+
+    <!-- https://schema.org/steps -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/steps"/>
+    
+
+
+    <!-- https://schema.org/subEvent -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/subEvent"/>
+    
+
+
+    <!-- https://schema.org/subEvents -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/subEvents"/>
+    
+
+
+    <!-- https://schema.org/surface -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/surface"/>
+    
+
+
+    <!-- https://schema.org/targetCollection -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/targetCollection"/>
+    
+
+
+    <!-- https://schema.org/temporalCoverage -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/temporalCoverage"/>
+    
+
+
+    <!-- https://schema.org/track -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/track"/>
+    
+
+
+    <!-- https://schema.org/tracks -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/tracks"/>
+    
+
+
+    <!-- https://schema.org/vendor -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/vendor"/>
+    
+
+
+    <!-- https://schema.org/warranty -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/warranty"/>
+    
+
+
+    <!-- https://schema.org/warrantyPromise -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/warrantyPromise"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
