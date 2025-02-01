@@ -1,0 +1,23 @@
+Dataset	Dataset_classification
+PasolliE_2019_Madagascar	Households
+PehrssonE_2016_PER	Households
+PehrssonE_2016_SLV	Households
+CosteaPI_2017_KAZ	Longitudinal_set
+LouisS_2016	Longitudinal_set
+MehtaRS_2018	Longitudinal_set
+NielsenHB_2014_ESP	Longitudinal_set
+AsnicarF_2017	Mother_offspring
+BackhedF_2015	Mother_offspring
+ChuDM_2017	Mother_offspring
+FerrettiP_2018	Mother_offspring
+ShaoY_2019	Mother_offspring
+TettAJ_2019_Ethiopia	Mother_offspring
+WampachL_2018	Mother_offspring
+YassourM_2018	Mother_offspring
+BritoIL_2016	Mother_offspring and Households
+Ghana	Mother_offspring and Households
+Tanzania	Mother_offspring and Households
+CosteaPI_2017_DEU	Mother_offspring and Households
+AsnicarF_2021	Twins
+XieH_2016	Twins
+HMP_2019_ibdmdb	NA
