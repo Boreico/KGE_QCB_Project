@@ -52,7 +52,7 @@ The Entity-Relationship (ER) model is designed to structure and represent the ke
 
 - **Person** is linked to **Sibling**, which has connection **Twin** entity.
 
-![ER Model](ER-model-final.png)
+![ER Model](images/ER-model-final.png)
 *The Entity-Relationship (ER) model with entities categorized into Common, Core, and Contextual groups.*
 
 ## Data Employed
@@ -140,7 +140,7 @@ The Knowledge Graph (KG) developed for this project integrates data on microbiom
    - The KG is highly interconnected, with entities like samples and taxons serving as central hubs for microbiome data.
    - Relationships also capture interactions between people, microbial transmission, and environmental factors, providing a detailed view of microbiome dynamics.
 
-![Knowledge Graph](GraphDB.png)  
+![Knowledge Graph](images/GraphDB.png)  
 *Graph made with GraphDB showing the connections between entities of the KG. Notice the BritoIL_2016 Dataset (purple) containing Samples (blue) taken from People (light green) with sibling relationships, from Fiji (Country, green). Moreover, Samples contain Taxons (light blue) that correspond to an SGB or a group of them (red).*
 
 
