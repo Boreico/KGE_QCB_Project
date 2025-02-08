@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!-- Ensure proper scaling on mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>KGE 2024/25 - The human microbiome and person-to-person interactions</title>
   <style>
@@ -12,22 +13,19 @@
       box-sizing: border-box;
     }
     
-    /* Use Gotham as primary font (ensure it is loaded or available) */
+    /* Global Body Styles */
     body {
       font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
       background-color: #ffffff;
       color: #000000;
       line-height: 1.8;
       transition: background-color 0.3s ease, color 0.3s ease;
+      width: 100%;
     }
-    
-    /* Dark Mode: Modern dark theme (dark gray background) */
     body.dark-mode {
       background-color: #121212;
       color: #e0e0e0;
     }
-    
-    /* Dark mode hyperlink styling */
     body.dark-mode a {
       color: #82aaff;
     }
@@ -35,23 +33,35 @@
       color: #b3d1ff;
     }
     
+    /* Ensure all images scale down */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    
     /* Header */
     header {
+      background-color: inherit;
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+    }
+    body.dark-mode header {
+      border-bottom: 1px solid #333;
+    }
+    header .inner {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 15px 20px;
-      border-bottom: 1px solid #ccc;
-    }
-    body.dark-mode header {
-      border-bottom: 1px solid #333;
+      width: 100%;
     }
     header h1 {
       font-size: 1.5em;
       text-align: left;
     }
     
-    /* Theme switcher button styling */
+    /* Theme Switcher */
     .theme-switcher {
       background: transparent;
       border: none;
@@ -67,51 +77,66 @@
       background: rgba(255, 255, 255, 0.1);
     }
     
-    /* Main container: flex layout with sidebar and content */
+    /* Main Container */
     .main-container {
       display: flex;
       align-items: flex-start;
-      margin: 0;
+      margin: 20px 0;
+      padding: 0 20px;
+      width: 100%;
     }
     
-    /* Sidebar styles */
-    .sidebar {
-      position: sticky;
-      top: 70px; /* Adjust based on header height */
+    /* Content Area */
+    .content {
+      order: 1;
+      flex: 1 1 auto;
+      min-width: 0;  /* Allows the content to shrink properly */
       padding: 20px;
-      width: 220px;
-      flex-shrink: 0;
-    }
-    .sidebar ul {
+        }
+        
+        /* Sidebar – Remove any sticky/fixed behavior by using normal (static/relative) positioning */
+        .sidebar {
+    order: 2;
+    width: 220px;
+    flex-shrink: 0;
+    padding: 20px;
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+        
+        .sidebar ul {
       list-style: none;
       padding-left: 0;
-    }
-    .sidebar li {
+        }
+        .sidebar li {
       margin-bottom: 10px;
-    }
-    .sidebar a {
+        }
+        .sidebar a {
       text-decoration: none;
       color: inherit;
       font-size: 0.95em;
       padding: 4px;
       display: block;
-    }
-    .sidebar a.active {
+        }
+        .sidebar a.active {
       font-weight: bold;
       border-left: 3px solid #000;
       padding-left: 8px;
     }
-    body.dark-mode .sidebar a.active {
-      border-color: #e0e0e0;
-    }
+    body.dark-mode .sidebar a {
+    color: #ffffff; /* white links */
+  }
+  body.dark-mode .sidebar a:hover {
+    color: #82aaff; /* blue on hover */
+  }
+
+  /* Optional: update active link border color if needed */
+  body.dark-mode .sidebar a.active {
+    border-color: #82aaff;
+  }
     
-    /* Content area styles */
-    .content {
-      flex-grow: 1;
-      padding: 20px;
-    }
-    
-    /* Enhanced readability for markdown content */
+    /* Markdown Content Styles */
     #details h1,
     #details h2,
     #details h3,
@@ -139,90 +164,115 @@
       border-radius: 3px;
       font-family: monospace;
     }
-    /* Dark mode override for inline code (grey squares) */
     body.dark-mode #details code {
       background-color: #333;
       color: #ddd;
     }
     
-    /* Preformatted code */
+    /* Preformatted Code */
     pre {
       background: #f5f5f5;
       padding: 20px;
       overflow-x: auto;
       border-radius: 4px;
       margin: 20px 0;
-      max-width: 100%;
+      width: 100%;
     }
     body.dark-mode pre {
       background: #2d2d2d;
     }
     
-    /* Images */
-    .visual img {
-      width: 100%;
-      max-width: 800px;
-      margin: 20px 0;
-      border-radius: 4px;
-    }
-    
     /* Footer */
     footer {
-      padding: 20px;
+      background-color: inherit;
       border-top: 1px solid #ccc;
       font-size: 0.9em;
       text-align: left;
+      padding: 20px;
+      width: 100%;
     }
     body.dark-mode footer {
       border-top: 1px solid #333;
     }
     
-    /* Responsive design adjustments */
+    /* Responsive Adjustments */
+    @media (max-width: 1024px) {
+      header h1 {
+        font-size: 1.3em;
+      }
+      .sidebar {
+        width: 180px;
+        padding: 15px;
+      }
+      .content {
+        padding: 20px;
+      }
+      pre {
+        padding: 15px;
+      }
+    }
     @media (max-width: 768px) {
       .main-container {
         flex-direction: column;
       }
+      header .inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      header h1 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
       .sidebar {
         width: 100%;
-        position: relative;
-        top: 0;
         padding: 10px 20px;
         border-bottom: 1px solid #ccc;
+        order: 2;
+      }
+      .content {
+        order: 1;
+      }
+    }
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1em;
+      }
+      .theme-switcher {
+        padding: 6px;
+      }
+      .sidebar {
+        padding: 10px;
+        font-size: 0.9em;
+      }
+      .content {
+        padding: 10px;
+        font-size: 0.95em;
+      }
+      pre {
+        font-size: 0.85em;
+        padding: 10px;
       }
     }
   </style>
-</head>
-<body>
-  <!-- Header with Title and Theme Switcher -->
+</head><body>
+  <!-- Header: Full width -->
   <header>
-    <h1>KGE 2024/25 - The human microbiome and person-to-person interactions</h1>
-    <button class="theme-switcher" id="theme-switcher" aria-label="Toggle theme">
-      <span id="theme-icon">
-        <!-- Moon icon: light mode active; click to switch to dark mode -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-        </svg>
-      </span>
-    </button>
+    <div class="inner">
+      <h1>KGE 2024/25 - The human microbiome and person-to-person interactions</h1>
+      <button class="theme-switcher" id="theme-switcher" aria-label="Toggle theme">
+        <span id="theme-icon">
+          <!-- Moon icon: light mode active; click to switch to dark mode -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </span>
+      </button>
+    </div>
   </header>
   
-  <!-- Main Container: Sidebar + Content -->
+  <!-- Main Container: Content on left, Sidebar on right -->
   <div class="main-container">
-    <!-- Sidebar Navigation -->
-    <nav class="sidebar">
-      <ul>
-        <li><a href="#background">Background</a></li>
-        <li><a href="#purpose">Purpose</a></li>
-        <li><a href="#personas">Personans &amp; CQs</a></li>
-        <li><a href="#er-model">ER Model</a></li>
-        <li><a href="#data-employed">Data Employed</a></li>
-        <li><a href="#teleontology">Teleontology</a></li>
-        <li><a href="#knowledge-graph">Knowledge Graph</a></li>
-        <li><a href="#evaluation">Evaluation</a></li>
-        <li><a href="#materials">Materials</a></li>
-      </ul>
-    </nav>
-    
     <!-- Main Content -->
     <div class="content">
       <section id="details">
@@ -250,7 +300,7 @@
             <li>Association of phenotypic characteristics (e.g., motility, Gram-staining) with specific transmission patterns.</li>
           </ul>
 
-          <h2 id="personas">Personans and Competency Questions (CQs)</h2>
+          <h2 id="personas">Personas and Competency Questions (CQs)</h2>
           <p>
             The project identifies five distinct personas, each representing a different perspective and set of requirements for the Knowledge Graph:
           </p>
@@ -297,7 +347,6 @@
             <li><strong>Phenotype</strong>: Captures microbial traits such as <code>Spore_Former</code>, <code>Anaerobe</code>, <code>Motile</code>, and <code>Gram_Negative</code>.</li>
             <li><strong>Transmission</strong>: Details microbial transmission rates in different contexts, including <code>Mother-Infant</code>, <code>Household</code>, and <code>Intradataset</code>.</li>
           </ul>
-          <!-- Insert ER Image -->
           <p>
             <img src="images/ER-model-final.png" alt="ER Model" style="max-width:100%; border-radius: 4px;">
           </p>
@@ -396,7 +445,6 @@
           <p>
             This merged and modified teleontology forms the backbone of the Knowledge Graph, enabling structured queries and facilitating the integration of diverse data sources.
           </p>
-
           <h2 id="knowledge-graph">Knowledge Graph</h2>
           <p>
             The Knowledge Graph (KG) developed for this project integrates data on microbiome samples, social relationships, and environmental factors. It represents a comprehensive dataset, enabling advanced queries and exploration of microbial dynamics. Below are the key statistics that highlight the scale and scope of the graph:
@@ -428,7 +476,6 @@
             <img src="images/GraphDB.png" alt="Knowledge Graph"><br>
             <em>Graph made with GraphDB showing the connections between entities of the KG. Notice the BritoIL_2016 Dataset (purple) containing Samples (blue) taken from People (light green) with sibling relationships, from Fiji (Country, green). Moreover, Samples contain Taxons (light blue) that correspond to an SGB or a group of them (red).</em>
           </p>
-
           <h2 id="evaluation">Evaluation</h2>
           <p>
             The evaluation of the Knowledge Graph (KG) focused on assessing its ability to address competency questions and its overall quality. Below are the key results:
@@ -443,7 +490,6 @@
               The KG exhibited strong query performance despite its large scale, containing over 1.7 million entities and 5.3 million relationships.
             </li>
           </ol>
-
           <h2 id="materials">Materials</h2>
           <ul>
             <li><a href="#">GitHub Repository</a></li>
@@ -454,9 +500,24 @@
         </div>
       </section>
     </div>
+    
+    <!-- Sidebar Navigation: Now scrolls normally with the rest of the page -->
+    <nav class="sidebar">
+      <ul>
+        <li><a href="#background">Background</a></li>
+        <li><a href="#purpose">Purpose</a></li>
+        <li><a href="#personas">Personas &amp; CQs</a></li>
+        <li><a href="#er-model">ER Model</a></li>
+        <li><a href="#data-employed">Data Employed</a></li>
+        <li><a href="#teleontology">Teleontology</a></li>
+        <li><a href="#knowledge-graph">Knowledge Graph</a></li>
+        <li><a href="#evaluation">Evaluation</a></li>
+        <li><a href="#materials">Materials</a></li>
+      </ul>
+    </nav>
   </div>
   
-  <!-- Footer -->
+  <!-- Footer: Full width -->
   <footer>
     <p>&copy; 2025 KGE-QCB-2. All rights reserved.</p>
   </footer>
@@ -470,7 +531,6 @@
     const moonIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
         </svg>`;
-    // Sun icon now uses a bright golden yellow fill and stroke for dark mode.
     const sunIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700" viewBox="0 0 24 24">
           <circle cx="12" cy="12" r="5"/>
           <g stroke="#FFD700" stroke-width="2">
@@ -502,7 +562,7 @@
     
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if(entry.isIntersecting) {
+        if (entry.isIntersecting) {
           navLinks.forEach(link => {
             link.classList.toggle("active", link.getAttribute("href").substring(1) === entry.target.id);
           });
