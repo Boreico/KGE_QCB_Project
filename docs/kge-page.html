@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KGE 2024/25 - The human microbiome and person-to-person interactions</title>
+  <style>
+    /* Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Use Gotham as primary font (ensure it is loaded or available) */
+    body {
+      font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+      line-height: 1.8;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    /* Dark Mode: Modern dark theme (dark gray background) */
+    body.dark-mode {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+    
+    /* Dark mode hyperlink styling */
+    body.dark-mode a {
+      color: #82aaff;
+    }
+    body.dark-mode a:hover {
+      color: #b3d1ff;
+    }
+    
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      border-bottom: 1px solid #ccc;
+    }
+    body.dark-mode header {
+      border-bottom: 1px solid #333;
+    }
+    header h1 {
+      font-size: 1.5em;
+      text-align: left;
+    }
+    
+    /* Theme switcher button styling */
+    .theme-switcher {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 50%;
+      transition: background 0.3s ease;
+    }
+    .theme-switcher:hover {
+      background: rgba(0, 0, 0, 0.1);
+    }
+    body.dark-mode .theme-switcher:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    
+    /* Main container: flex layout with sidebar and content */
+    .main-container {
+      display: flex;
+      align-items: flex-start;
+      margin: 0;
+    }
+    
+    /* Sidebar styles */
+    .sidebar {
+      position: sticky;
+      top: 70px; /* Adjust based on header height */
+      padding: 20px;
+      width: 220px;
+      flex-shrink: 0;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+    .sidebar a {
+      text-decoration: none;
+      color: inherit;
+      font-size: 0.95em;
+      padding: 4px;
+      display: block;
+    }
+    .sidebar a.active {
+      font-weight: bold;
+      border-left: 3px solid #000;
+      padding-left: 8px;
+    }
+    body.dark-mode .sidebar a.active {
+      border-color: #e0e0e0;
+    }
+    
+    /* Content area styles */
+    .content {
+      flex-grow: 1;
+      padding: 20px;
+    }
+    
+    /* Enhanced readability for markdown content */
+    #details h1,
+    #details h2,
+    #details h3,
+    #details h4,
+    #details h5,
+    #details h6 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+    #details p {
+      margin-bottom: 1em;
+    }
+    #details ul,
+    #details ol {
+      padding-left: 2em;
+      margin-bottom: 1em;
+    }
+    #details li {
+      margin-bottom: 0.5em;
+    }
+    #details code {
+      background-color: #f0f0f0;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+    /* Dark mode override for inline code (grey squares) */
+    body.dark-mode #details code {
+      background-color: #333;
+      color: #ddd;
+    }
+    
+    /* Preformatted code */
+    pre {
+      background: #f5f5f5;
+      padding: 20px;
+      overflow-x: auto;
+      border-radius: 4px;
+      margin: 20px 0;
+      max-width: 100%;
+    }
+    body.dark-mode pre {
+      background: #2d2d2d;
+    }
+    
+    /* Images */
+    .visual img {
+      width: 100%;
+      max-width: 800px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+    
+    /* Footer */
+    footer {
+      padding: 20px;
+      border-top: 1px solid #ccc;
+      font-size: 0.9em;
+      text-align: left;
+    }
+    body.dark-mode footer {
+      border-top: 1px solid #333;
+    }
+    
+    /* Responsive design adjustments */
+    @media (max-width: 768px) {
+      .main-container {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+        position: relative;
+        top: 0;
+        padding: 10px 20px;
+        border-bottom: 1px solid #ccc;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with Title and Theme Switcher -->
+  <header>
+    <h1>KGE 2024/25 - The human microbiome and person-to-person interactions</h1>
+    <button class="theme-switcher" id="theme-switcher" aria-label="Toggle theme">
+      <span id="theme-icon">
+        <!-- Moon icon: light mode active; click to switch to dark mode -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </span>
+    </button>
+  </header>
+  
+  <!-- Main Container: Sidebar + Content -->
+  <div class="main-container">
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+      <ul>
+        <li><a href="#background">Background</a></li>
+        <li><a href="#purpose">Purpose</a></li>
+        <li><a href="#personas">Personans &amp; CQs</a></li>
+        <li><a href="#er-model">ER Model</a></li>
+        <li><a href="#data-employed">Data Employed</a></li>
+        <li><a href="#teleontology">Teleontology</a></li>
+        <li><a href="#knowledge-graph">Knowledge Graph</a></li>
+        <li><a href="#evaluation">Evaluation</a></li>
+        <li><a href="#materials">Materials</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Main Content -->
+    <div class="content">
+      <section id="details">
+        <div class="container">
+          <p>
+            This project was developed by 
+            <em><a href="mailto:roan.spadazzi@studenti.unitn.it">Roan Spadazzi</a></em>, 
+            <em><a href="mailto:vladyslav.husak@studenti.unitn.it">Vladyslav Husak</a></em>, 
+            <em><a href="mailto:andrea.policano@studenti.unitn.it">Andrea Policano</a></em> 
+            for the Knowledge Graph Engineering course at the University of Trento. The provided iTelos methodology was the basis for the development of the project.
+          </p>
+
+          <h2 id="background">Background</h2>
+          <p>
+            The microbiome plays a fundamental role in understanding human health and social interactions. This project focuses on systematically organizing data on microbiome transmission patterns, incorporating both biological and social dimensions. By leveraging the Knowledge Graph (KG) approach, we aim to provide researchers and clinicians with tools to explore the dynamics of microbial diversity and transmission across populations.
+          </p>
+
+          <h2 id="purpose">Purpose</h2>
+          <p>
+            The primary goal of this project is to create a comprehensive and reusable system for exploring microbiome transmission data. The system must support:
+          </p>
+          <ul>
+            <li>Analysis of bacterial species transmission across various relationships (e.g., parent-child, siblings).</li>
+            <li>Comparison of microbial diversity in different social and environmental contexts (e.g., Westernized vs. non-Westernized populations).</li>
+            <li>Association of phenotypic characteristics (e.g., motility, Gram-staining) with specific transmission patterns.</li>
+          </ul>
+
+          <h2 id="personas">Personans and Competency Questions (CQs)</h2>
+          <p>
+            The project identifies five distinct personas, each representing a different perspective and set of requirements for the Knowledge Graph:
+          </p>
+          <ol>
+            <li><strong>Francesca (Microbiologist)</strong>: Focused on studying microbial transmission within family households and its connection to phenotypic features.</li>
+            <li><strong>Karmen (Clinician)</strong>: Interested in analyzing geographic and environmental impacts on microbial transmission for better treatment planning.</li>
+            <li><strong>Franco (Student)</strong>: Aims to understand and present the mechanisms of bacterial transmission.</li>
+            <li><strong>Juana (Dental Hygienist)</strong>: Requires data on oral microbial transmission rates for teaching purposes.</li>
+            <li><strong>Herald (Social Scientist)</strong>: Investigates how microbial transmission reflects social relationships and interactions.</li>
+          </ol>
+          <p>
+            Each persona has a set of specific competency questions (CQs) that the KG addresses. In addition, generalized questions applicable across multiple scenarios are included. Examples of such generalized questions are:
+          </p>
+          <ul>
+            <li>What are the primary mechanisms of bacterial transmission between individuals?</li>
+            <li>How do microbial transmission rates vary across different geographic regions?</li>
+            <li>Which bacterial species are most commonly transmitted within specific social structures, such as families?</li>
+          </ul>
+          <p>
+            For a detailed breakdown of all competency questions by persona, refer to the full project report.
+          </p>
+
+          <h2 id="er-model">ER Model</h2>
+          <p>
+            The Entity-Relationship (ER) model is designed to structure and represent the key entities and relationships in the Knowledge Graph. It is divided into three main categories:
+          </p>
+          <h3>1. Common Entities</h3>
+          <p>These entities are general and reusable across various domains. Examples include:</p>
+          <ul>
+            <li><strong>Country</strong>: Represents the geographic origin of samples or individuals, including a <code>Boolean</code> attribute to indicate whether the country is Westernized.</li>
+            <li><strong>Person</strong>: Includes key attributes such as <code>Subject_ID</code>, <code>Gender</code>, <code>Family_ID</code>, and relationships like <code>Mother</code>, <code>Father</code>, and <code>Sibling</code>.</li>
+            <li><strong>Sibling</strong>: Further specialized into <strong>Twin</strong>, which captures attributes such as <code>Zygosity</code> and <code>Age_Living_Apart</code>.</li>
+          </ul>
+          <h3>2. Core Entities</h3>
+          <p>These are central to the microbiome transmission analysis and directly linked to the project's objectives. Examples include:</p>
+          <ul>
+            <li><strong>Sample</strong>: The main hub for data, storing information like <code>Sample_ID</code>, <code>Body_Site</code>, and <code>Age_Category</code>.</li>
+            <li><strong>Taxonomy</strong>: Defines the hierarchical classification of microbial species (e.g., Kingdom, Phylum, Genus, Species).</li>
+            <li><strong>SGB (Species-Level Genome Bins)</strong>: Groups microbial genomes, serving as a link between <code>Samples</code> and microbial classification.</li>
+          </ul>
+          <h3>3. Contextual Entities</h3>
+          <p>Purpose-specific entities that provide additional granularity and context. Examples include:</p>
+          <ul>
+            <li><strong>Phenotype</strong>: Captures microbial traits such as <code>Spore_Former</code>, <code>Anaerobe</code>, <code>Motile</code>, and <code>Gram_Negative</code>.</li>
+            <li><strong>Transmission</strong>: Details microbial transmission rates in different contexts, including <code>Mother-Infant</code>, <code>Household</code>, and <code>Intradataset</code>.</li>
+          </ul>
+          <!-- Insert ER Image -->
+          <p>
+            <img src="images/ER-model-final.png" alt="ER Model" style="max-width:100%; border-radius: 4px;">
+          </p>
+          <p><em>The Entity-Relationship (ER) model with entities categorized into Common, Core, and Contextual groups.</em></p>
+
+          <h2 id="data-employed">Data Employed</h2>
+          <p>
+            The project utilized several datasets to construct a robust Knowledge Graph, focusing on microbiome transmission dynamics. Below is a description of the key datasets employed:
+          </p>
+          <ol>
+            <li>
+              <strong>Primary Microbiome Transmission Study</strong>
+              <ul>
+                <li><strong>Source:</strong> <a href="https://doi.org/10.1038/s41586-022-05620-1" target="_blank">Valles-Colomer, M., Blanco-Míguez, A., Manghi, P. et al. The person-to-person transmission landscape of the gut and oral microbiomes. <em>Nature</em> 614, 125–135 (2023)</a></li>
+                <li><strong>Description:</strong> This study explores the human microbiome's transmission across populations and social contexts. It provides a rich dataset, including microbial taxonomy, transmission rates, phenotypes, and statistical analyses derived from metagenomic samples. Supplementary tables from this study served as the foundation for much of the project.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Sample Metadata</strong>
+              <ul>
+                <li><strong>Source:</strong> Supplementary Tables S1 and S2 from the primary study.</li>
+                <li><strong>Description:</strong> Contains metadata for 9,700 samples, including demographic details (e.g., age, gender, and relationships), body sites (e.g., saliva, stool), and links between individuals and their samples.</li>
+                <li><strong>Purpose:</strong> Enables analysis of microbial transmission patterns by linking samples to individuals and family units.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Taxonomy Data</strong>
+              <ul>
+                <li><strong>Source:</strong> Tables S4 and S5 from the primary study.</li>
+                <li><strong>Description:</strong> Provides detailed taxonomic classifications (e.g., Kingdom, Genus, Species) for bacterial species found in stool and saliva samples.</li>
+                <li><strong>Purpose:</strong> Supports identification of microbial species and their relative abundance in samples.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Transmission Rates</strong>
+              <ul>
+                <li><strong>Source:</strong> Tables S9, S16, S20, and S30-S32 from the primary study.</li>
+                <li><strong>Description:</strong> Includes transmission metrics such as mother-infant transmission, household transmission rates, and inter-dataset transmission rates.</li>
+                <li><strong>Purpose:</strong> Captures key dynamics of microbial sharing across different social and environmental contexts.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Phenotypic Data</strong>
+              <ul>
+                <li><strong>Source:</strong> Table S34 from the primary study.</li>
+                <li><strong>Description:</strong> Contains microbial traits like <code>Spore_Former</code>, <code>Motility</code>, <code>Anaerobic Status</code>, and <code>Gram_Negative</code> characteristics.</li>
+                <li><strong>Purpose:</strong> Enables linking microbial phenotypes to transmission and environmental factors.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Curated Metagenomic Data (R Library)</strong>
+              <ul>
+                <li><strong>Source:</strong> <a href="https://bioconductor.org/packages/release/data/experiment/html/curatedMetagenomicData.html" target="_blank">curatedMetagenomicData R package</a>.</li>
+                <li><strong>Description:</strong> Provides standardized, curated human microbiome data for novel analyses. It includes gene families, marker abundance, marker presence, pathway abundance, pathway coverage, and relative abundance for samples collected from different body sites. Taxonomic abundances were calculated with MetaPhlAn3 and metabolic potential with HUMAnN3. The sample metadata and data are available as (Tree)SummarizedExperiment objects.</li>
+                <li><strong>Purpose:</strong> Adds relative abundance data to the KG, providing quantitative analysis options.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Abundance Data</strong>
+              <ul>
+                <li><strong>Source:</strong> Derived from curatedMetagenomicData R package.</li>
+                <li><strong>Description:</strong> Provides relative abundance values for microbial species across all samples, linking each species to its presence in individual samples.</li>
+                <li><strong>Purpose:</strong> Facilitates quantitative analysis of microbial diversity and distribution.</li>
+              </ul>
+            </li>
+          </ol>
+
+          <h2 id="teleontology">Teleontology</h2>
+          <p>
+            The teleontology developed for this project integrates and extends existing ontologies to align with the specific goals of the Knowledge Graph. The following ontologies were used:
+          </p>
+          <ol>
+            <li>
+              <strong>Schema.org</strong>:<br>
+              Provides a general framework for describing entities and their relationships. Used to define high-level concepts such as <code>Dataset</code>, <code>Country</code>, and <code>Person</code>.
+            </li>
+            <li>
+              <strong>Bioschemas.org</strong>:<br>
+              Specializes in life sciences and extends Schema.org with profiles for biological data. Used to model domain-specific entities such as <code>BioSample</code> and <code>Taxon</code>.
+            </li>
+            <li>
+              <strong>Custom Extensions</strong>:<br>
+              To address the microbiome-specific requirements, we defined custom entities and properties (e.g., <code>Transmission</code>, <code>Phenotype</code>) that were not covered by existing ontologies.
+            </li>
+          </ol>
+          <h3>Merging and Modifications</h3>
+          <p>
+            The integration involved:
+          </p>
+          <ul>
+            <li><strong>Alignment</strong>: Entities and properties from Schema.org and Bioschemas.org were aligned with the Entity-Relationship model.</li>
+            <li><strong>Customization</strong>: New purpose-specific entities (e.g., <code>SGB</code>, <code>Twin</code>) and relationships were added to represent microbiome data.</li>
+            <li><strong>Simplification</strong>: Redundant properties and entities from the base ontologies were removed to streamline the teleontology.</li>
+            <li><strong>Formalization</strong>: The final teleontology was implemented in OWL using Protégé, ensuring it was consistent, reusable, and compatible with the data structure.</li>
+          </ul>
+          <p>
+            This merged and modified teleontology forms the backbone of the Knowledge Graph, enabling structured queries and facilitating the integration of diverse data sources.
+          </p>
+
+          <h2 id="knowledge-graph">Knowledge Graph</h2>
+          <p>
+            The Knowledge Graph (KG) developed for this project integrates data on microbiome samples, social relationships, and environmental factors. It represents a comprehensive dataset, enabling advanced queries and exploration of microbial dynamics. Below are the key statistics that highlight the scale and scope of the graph:
+          </p>
+          <ol>
+            <li>
+              <strong>Entity and Relationship Statistics</strong>:<br>
+              Total entities: Over 1.7 million<br>
+              Total relationships (statements): More than 5.3 million<br>
+              Major entities include:
+              <ul>
+                <li>Samples: Nearly 6,000 instances</li>
+                <li>Taxons: Over 1,600 instances</li>
+                <li>SGBs (Species-Level Genome Bins): Approximately 900 instances</li>
+                <li>People: Over 3,000 instances</li>
+              </ul>
+              Each entity is connected by an average of 6 relationships, ensuring a highly interconnected graph.
+            </li>
+            <li>
+              <strong>Data Distribution</strong>:<br>
+              Most connections involve microbiome data such as relative abundance, taxonomic classifications, and phenotypes. Significant relationships exist between individuals and their microbiome samples, linking geographic and social contexts.
+            </li>
+            <li>
+              <strong>Connectivity</strong>:<br>
+              The KG is highly interconnected, with entities like samples and taxons serving as central hubs for microbiome data. Relationships also capture interactions between people, microbial transmission, and environmental factors, providing a detailed view of microbiome dynamics.
+            </li>
+          </ol>
+          <p>
+            <img src="images/GraphDB.png" alt="Knowledge Graph"><br>
+            <em>Graph made with GraphDB showing the connections between entities of the KG. Notice the BritoIL_2016 Dataset (purple) containing Samples (blue) taken from People (light green) with sibling relationships, from Fiji (Country, green). Moreover, Samples contain Taxons (light blue) that correspond to an SGB or a group of them (red).</em>
+          </p>
+
+          <h2 id="evaluation">Evaluation</h2>
+          <p>
+            The evaluation of the Knowledge Graph (KG) focused on assessing its ability to address competency questions and its overall quality. Below are the key results:
+          </p>
+          <ol>
+            <li>
+              <strong>Coverage</strong>:<br>
+              The KG successfully incorporated all key entities, relationships, and properties defined in the teleontology. It was able to answer most of competency questions. However, not all of them can be directly answered with the result of a query. In such cases the result of the query is a strong starting point for more research to follow.
+            </li>
+            <li>
+              <strong>Performance</strong>:<br>
+              The KG exhibited strong query performance despite its large scale, containing over 1.7 million entities and 5.3 million relationships.
+            </li>
+          </ol>
+
+          <h2 id="materials">Materials</h2>
+          <ul>
+            <li><a href="#">GitHub Repository</a></li>
+            <li><a href="#">Final Project Report</a></li>
+            <li><a href="#">Metadata Files</a></li>
+            <li><a href="#">Language Definition Sheet</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 KGE-QCB-2. All rights reserved.</p>
+  </footer>
+  
+  <!-- JavaScript for Theme Switching and Active Section Highlighting -->
+  <script>
+    // Theme switching logic
+    const themeSwitcher = document.getElementById('theme-switcher');
+    const themeIcon = document.getElementById('theme-icon');
+    
+    const moonIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>`;
+    // Sun icon now uses a bright golden yellow fill and stroke for dark mode.
+    const sunIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFD700" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="5"/>
+          <g stroke="#FFD700" stroke-width="2">
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </g>
+        </svg>`;
+    
+    themeSwitcher.addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+      themeIcon.innerHTML = document.body.classList.contains('dark-mode') ? sunIcon : moonIcon;
+    });
+    
+    // Active Section Highlighting in the Sidebar
+    const sections = document.querySelectorAll("#details h2");
+    const navLinks = document.querySelectorAll(".sidebar a");
+    
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.6
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          navLinks.forEach(link => {
+            link.classList.toggle("active", link.getAttribute("href").substring(1) === entry.target.id);
+          });
+        }
+      });
+    }, observerOptions);
+    
+    sections.forEach(section => observer.observe(section));
+  </script>
+</body>
+</html>
