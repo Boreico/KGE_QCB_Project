@@ -10,7 +10,7 @@ The primary goal of this project is to create a comprehensive and reusable syste
 - Comparison of microbial diversity in different social and environmental contexts (e.g., Westernized vs. non-Westernized populations).
 - Association of phenotypic characteristics (e.g., motility, Gram-staining) with specific transmission patterns.
 
-## Personans and Competency Questions (CQs)
+## Personas and Competency Questions (CQs)
 The project identifies five distinct personas, each representing a different perspective and set of requirements for the Knowledge Graph:
 
 1. **Francesca (Microbiologist)**: Focused on studying microbial transmission within family households and its connection to phenotypic features.
